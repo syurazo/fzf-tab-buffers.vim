@@ -19,6 +19,13 @@ nnoremap [fzf] <Nop>
 nmap <Leader>f [fzf]
 
 nnoremap <silent> [fzf]b :<C-u>TabBuffers<CR>
+
+let g:fzf_tab_buffers_actions = {
+\   'ctrl-t': 'tab split',
+\   'ctrl-x': 'split',
+\   'ctrl-v': 'vsplit',
+\   'ctrl-d': 'bwipe'
+\ }
 ```
 
 ## License
